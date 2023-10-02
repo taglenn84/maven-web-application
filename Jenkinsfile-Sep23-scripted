@@ -29,7 +29,6 @@ node{
         //timeout(time:600, unit:'MINUTES') {
         //input message: 'Application ready for deployment, Please review and approve'
       }       
-    }
     stage('7.Deploy2Prod'){
       sh "echo 'Deploy application to the customers/production' " 
      //deploy adapters: [tomcat9(credentialsId: 'tomcat-credentials', path: '', url: 'http://34.219.51.216:8177/')], contextPath: null, war: 'target/*war'
